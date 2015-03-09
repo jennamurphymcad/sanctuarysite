@@ -1,13 +1,14 @@
 /*
-Theme Name: Sanctuarysite
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
+Theme Name: Sanctuary
+Theme URI: http://http://www.sanctuary.jennadeemurphy.com/
+Author: Jenna Murphy
+Author URI: http://http://www.sanctuary.jennadeemurphy.com/
 Description: Description
-Version: 1.0.0
+Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sanctuarysite
+Domain Path: /languages/
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
@@ -42,6 +43,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	12.1 Captions
 	12.2 Galleries
 --------------------------------------------------------------*/
+
+
 
 /*--------------------------------------------------------------
 1.0 Normalize
@@ -263,19 +266,68 @@ th {
 }
 
 /*--------------------------------------------------------------
+Figure
+--------------------------------------------------------------*/
+
+figure {
+	position: relative;
+	clear: both;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+figcaption {
+	max-width: 100%;
+	position: absolute; 
+	bottom: 20px;
+	padding: 3em;
+	margin: 0;
+	color: #FFF;
+}
+
+figcaption h2 {
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+
+}
+
+figcaption h3 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 4rem;
+
+}
+
+
+
+
+
+/*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
+
+
+
+
+
+
 body,
 button,
 input,
 select,
 textarea {
 	color: #404040;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
 	font-size: 16px;
-	font-size: 1rem;
+	font-size: 1.6rem;
 	line-height: 1.5;
 }
 
+h1 {
+	font-family: 'Arvo', serif;
+	font-weight: normal;
+}
 h1,
 h2,
 h3,
@@ -344,6 +396,12 @@ big {
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
+.fsi_active {
+	max-width: 200%;
+
+}
+
+
 html {
 	box-sizing: border-box;
 }
@@ -355,7 +413,7 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: #000; 
 }
 
 blockquote:before,
@@ -517,29 +575,87 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-5.2 Menus
+Header
 --------------------------------------------------------------*/
-.main-navigation {
+
+.logo {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: 1000;
+}
+
+/*--------------------------------------------------------------
+Footer 
+--------------------------------------------------------------*/
+
+footer {
 	clear: both;
 	display: block;
-	float: left;
 	width: 100%;
+	padding: 25px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding-right: 5px;
+
+}
+
+
+footer li {
+	float: left;
+	position: relative;
+	padding-right: 15px;
+}
+
+footer p {
+	float: right;
+	color: #ffffff;
+	font-size: .8rem;
+}
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+
+
+.main-navigation {
+	position: fixed;
+	top: 30px;
+	display: block;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	float: right;
+	padding: 25px;
+	padding-left: 45%;
+	margin-top: 40px;
+	text-transform: uppercase;
+	font-size: .9rem;
+	z-index: 999;
+	
 }
 
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding-right: 5px;
+
 }
 
 .main-navigation li {
 	float: left;
 	position: relative;
+	padding-right: 15px;
+	font-family: 'Arvo regular', serif;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: #FFFFFF;
 }
 
 .main-navigation ul ul {
@@ -882,3 +998,8 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+slider
+--------------------------------------------------------------*/
+

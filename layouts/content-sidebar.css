@@ -3,20 +3,63 @@ Theme Name: Sanctuarysite
 Layout: Content-Sidebar
 */
 
-.content-area {
-	float: left;
-	margin: 0 -25% 0 0;
-	width: 100%;
-}
+
 .site-main {
 	margin: 0 25% 0 0;
+}
+
+	.entry-header,
+	.entry-content,
+	.entry-meta,
+	.entry-footer,
+	.tag-links,
+	.post-navigation,
+	.comments-area,
+	.paging-navigation {
+		position: relative;
+		max-width: 780px;
+		max-width: 78rem;
+		padding: 0 rem;
+		margin: 0 auto;
+	
+	}
+
+
+.site-footer {
+	clear: both;
+	width: 100%;
 }
 .site-content .widget-area {
 	float: right;
 	overflow: hidden;
 	width: 25%;
 }
-.site-footer {
-	clear: both;
-	width: 100%;
+
+@media screen and (min-width: 1160px) {
+	.content-area {
+		float: left;
+		margin: 0 -25% 0 0;
+		width: 100%;
+	}
+	
+	.entry-header,
+	.entry-content,
+	.entry-meta,
+	.entry-footer,
+	.tag-links,
+	.post-navigation,
+	.comments-area,
+	.paging-navigation {
+		margin: 0 auto;
+	
+	}
+}
+
+@media screen and (max-width: 1159px) {
+	.site-content .widget-area {
+		float: none;
+		width: auto;
+		max-width: 780px;
+		margin: 1em auto 0;
+	}
 }

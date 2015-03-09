@@ -11,11 +11,14 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'sanctuarysite' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'sanctuarysite' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'sanctuarysite' ), 'Sanctuarysite', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+			<ul>
+				<li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/tumbler.gif" alt="tumbler icon"></li>
+				<li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.gif" alt="twitter icon"></li>
+				<li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pintrest.gif" alt="pintrest icon"></li>
+				<li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook.gif" alt="facebook icon"></li>
+			</ul>
+			
+			<p>&copy; copyright Sanctuary Eco-Retreat 2014</p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
