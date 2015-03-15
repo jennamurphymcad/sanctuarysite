@@ -9,7 +9,7 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels: max-width of page content. */
+	$content_width = 1024; /* pixels: max-width of page content. */
 }
 
 if ( ! function_exists( 'sanctuarysite_setup' ) ) :

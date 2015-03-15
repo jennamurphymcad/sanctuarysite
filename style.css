@@ -278,37 +278,83 @@ figure {
 }
 
 figcaption {
-	max-width: 100%;
+	width: 100%;
 	position: absolute; 
 	bottom: 20px;
-	padding: 3em;
-	margin: 0;
 	color: #FFF;
 }
 
 figcaption h2 {
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
+	position: absolute;
+	font-size: 2rem;
 
 }
+
+.home1 figcaption h2 {
+	bottom: 200px;
+	right: 100px;
+	}
 
 figcaption h3 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 4rem;
+	font-size: 3rem;
+	position: absolute;
+}
 
+.home1 figcaption h3 {
+	bottom: 140px;
+	right: 15px;
+}
+
+.home2 figcaption h2 {
+	bottom: 300px;
+	left: 220px;
+	}
+
+.home2 figcaption h3 {
+	bottom: 235px;
+	left: 120px;
 }
 
 
+.home3 figcaption h2 {
+	color: #000;
+	bottom: 150px;
+	right: 150px;
+	}
+
+.home3 figcaption h3 {
+	color: #000;
+	bottom: 90px;
+	right: 20px;
+}
 
 
+.home4 figcaption h2 {
+	bottom: 175px;
+	right: 75px;
+	}
+
+.home4 figcaption h3 {
+	bottom: 115px;
+	right: 75px;
+}
+
+.home5 figcaption h2 {
+	bottom: 245px;
+	left: 70px;
+	}
+
+.home5 figcaption h3 {
+	bottom: 185px;
+	left: 50px;
+}
 
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
-
-
-
-
 
 
 body,
@@ -406,6 +452,7 @@ html {
 	box-sizing: border-box;
 }
 
+
 *,
 *:before,
 *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
@@ -413,7 +460,9 @@ html {
 }
 
 body {
-	background: #000; 
+	background: #000;
+	max-width: 1024px;
+	margin: 0 auto; 
 }
 
 blockquote:before,
@@ -626,6 +675,8 @@ footer p {
 	position: fixed;
 	top: 30px;
 	display: block;
+	max-width: 1024px;
+	margin: 0 auto;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	float: right;
