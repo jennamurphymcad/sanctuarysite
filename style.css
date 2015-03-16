@@ -304,7 +304,25 @@ Cabin
 
 }
 
+.cabinavailability {
+	background-color: #4b7425;
+	color: #FFF;
+	padding: 10px;
+	margin-right: 250px;
+	margin-top: 20px;
+}
 
+.cabinavailability a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.cabinavailability a:visited {
+	color: #FFF;
+}
+.cabinfeatures {
+	margin-top: 20px;
+}
 
 
 
