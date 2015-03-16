@@ -95,6 +95,48 @@ function sanctuarysite_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 }
+
+add_action( 'init', 'create_my_post_types' );
+
+function create_my_post_types() {
+ register_post_type( 'painters-cabin', 
+ array(
+      'labels' => array(
+      	'name' => __( 'Painters Cabin' ),
+      	'singular_name' => __( 'Painters Cabin' ),
+      	'add_new' => __( 'Add New' ),
+      	'add_new_item' => __( 'Add New Painters Cabin' ),
+      	'edit' => __( 'Edit' ),
+      	'edit_item' => __( 'Edit Painters Cabin' ),
+      	'new_item' => __( 'New Painters Cabin' ),
+      	'view' => __( 'View Painters Cabin' ),
+      	'view_item' => __( 'View Painters Cabin' ),
+      	'search_items' => __( 'Search Painters Cabin' ),
+      	'not_found' => __( 'No Painters Cabin found' ),
+      	'not_found_in_trash' => __( 'No Painters Cabin found in Trash' ),
+      	'parent' => __( 'Parent Painters Cabin' ),
+      ),
+      
+      'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail', 'page-attributes' ),
+      		
+ 'public' => true,
+      'menu_position' => 4,
+      'rewrite' => array('slug' => 'painters-cabin'),
+      'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
+      'taxonomies' => array('category', 'post_tag'),
+      'publicly_queryable' => true,
+      'show_ui' => true,
+      'query_var' => true,
+      'capability_type' => 'post',
+      'hierarchical' => false,
+     )
+  );
+}
+
+
+
+
+
 add_action( 'widgets_init', 'sanctuarysite_widgets_init' );
 
 /**
@@ -104,7 +146,7 @@ function sanctuarysite_scripts() {
 	
 	wp_enqueue_style( 'sanctuarysite-style', get_stylesheet_uri() );
 	
-	wp_enqueue_style( 'sanctuarysite-style-google-fonts', 'http://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans:400,700|Open+Sans+Condensed:300' );
+	wp_enqueue_style( 'sanctuarysite-style-google-fonts', 'http://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans:400,700|Open+Sans+Condensed:300,700' );
 	
 	wp_enqueue_script( 'sanctuarysite-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
